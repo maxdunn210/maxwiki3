@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/maxwiki/!svn/ver/2/trunk/app/views/admin
+END
+expire_cache.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maxwiki/!svn/ver/2/trunk/app/views/admin/expire_cache.rhtml
+END
+create_wiki.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maxwiki/!svn/ver/2/trunk/app/views/admin/create_wiki.rhtml
+END
+delete_old_sessions.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/maxwiki/!svn/ver/2/trunk/app/views/admin/delete_old_sessions.rhtml
+END
+create_system.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/maxwiki/!svn/ver/2/trunk/app/views/admin/create_system.rhtml
+END
+edit_wiki.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/app/views/admin/edit_wiki.rhtml
+END

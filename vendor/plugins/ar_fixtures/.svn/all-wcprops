@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/ar_fixtures
+END
+instructions.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/ar_fixtures/instructions.txt
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/ar_fixtures/init.rb
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/ar_fixtures/CHANGELOG
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/ar_fixtures/MIT-LICENSE
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/ar_fixtures/README
+END

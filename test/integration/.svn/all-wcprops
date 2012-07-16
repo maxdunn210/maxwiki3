@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/maxwiki/!svn/ver/2/trunk/test/integration
+END
+helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/test/integration/helper_test.rb
+END
+pagination_sort_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/maxwiki/!svn/ver/2/trunk/test/integration/pagination_sort_test.rb
+END
+cache_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/test/integration/cache_test.rb
+END
+wiki_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/6/trunk/test/integration/wiki_test.rb
+END
+wiki_event_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/maxwiki/!svn/ver/2/trunk/test/integration/wiki_event_test.rb
+END
+admin_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/test/integration/admin_test.rb
+END
+login_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/test/integration/login_test.rb
+END
+player_return_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maxwiki/!svn/ver/2/trunk/test/integration/player_return_test.rb
+END
+survey_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/test/integration/survey_test.rb
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin
+END
+do_svn_update.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/do_svn_update.rhtml
+END
+list_players.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/list_players.rhtml
+END
+list_users.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/list_users.rhtml
+END
+export_players.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/export_players.rhtml
+END
+_form.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/_form.rhtml
+END
+_player_table.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/_player_table.rhtml
+END
+_reg_admin_left_menu.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/_reg_admin_left_menu.rhtml
+END
+export_users.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/export_users.rhtml
+END
+edit_user.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/edit_user.rhtml
+END
+orphan_check.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/orphan_check.rhtml
+END
+index.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/index.rhtml
+END
+new_user.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/new_user.rhtml
+END
+process_new_year.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/process_new_year.rhtml
+END
+svn_update.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/app/views/reg_admin/svn_update.rhtml
+END

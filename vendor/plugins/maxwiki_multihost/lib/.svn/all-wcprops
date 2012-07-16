@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/maxwiki_multihost/lib
+END
+maxwiki_multihost.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/maxwiki_multihost/lib/maxwiki_multihost.rb
+END
+maxwiki_hier_table.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/maxwiki_multihost/lib/maxwiki_hier_table.rb
+END
+maxwiki_export_merge.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/maxwiki_multihost/lib/maxwiki_export_merge.rb
+END
+wiki_scope.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/maxwiki_multihost/lib/wiki_scope.rb
+END

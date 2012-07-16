@@ -1,0 +1,95 @@
+/* Colors
+ * Dark blue rgb(0, 30,89)
+ * Light blue rgb(61, 133, 198)
+ */
+
+/******** Widths ********/
+#border, #top, #bottom { width: 800px; }
+#container, #header, #footer { width: 800px; }
+
+body { 
+  font-family: Helvetica, Arial, Trebuchet MS, Verdana;
+  font-size: 13px;
+  line-height: 18px;
+  color: #444;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  background: #1E2731 url(page_bg.png) repeat-x;
+	background-attachment: scroll;
+}
+
+#header {
+  height: 100px;
+  background: url(gridrev_header.jpg) no-repeat;
+}
+
+#menu {
+  height: 0px;
+}	
+
+#menu .edit_block { 
+ display:none;
+}  
+
+.left_menu {  
+  padding-top: 10px;
+  border-bottom: none;
+}	
+	
+.left_menu a,
+.left_menu a:visited,
+.left_menu a:hover, 
+.left_menu .selected,
+.left_menu a:visited.selected {
+  font-weight: bold;
+	font-size: 14px;
+  text-align: right;
+  text-decoration: none;
+	color: rgb(0, 30,89);
+}
+
+.left_menu a:hover, 
+.left_menu .selected {
+  border-left: solid 5px rgb(0, 111, 186);        
+  background-color: rgb(178, 212, 234); 
+}
+
+
+#middle_column {
+  color: #444;
+}
+
+#middle_column h1,
+#middle_column h2,
+#middle_column h3,
+#middle_column h4 {
+  clear: both;
+  border-bottom: none; 
+  text-decoration: none;
+}
+
+#middle_column h1 {
+  color: rgb(7,55,99);
+  font-size: 1.8em;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#middle_column h2 {
+  color: rgb(11,83,148);
+  font-size: 1.3em;
+}
+
+#middle_column h3 {
+  color: rgb(71,129,179);
+  font-size: 1.1em;
+}
+
+#footer,
+#footer .left_block,
+#footer .middle_block,
+#footer .right_block,
+#footer .edit_block {
+  /* background-color: rgb(61, 133, 198); */
+}

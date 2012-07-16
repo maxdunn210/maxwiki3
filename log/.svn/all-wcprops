@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/maxwiki/!svn/ver/2/trunk/log
+END
+test.log
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/maxwiki/!svn/ver/2/trunk/log/test.log
+END
+development.log
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/maxwiki/!svn/ver/2/trunk/log/development.log
+END
+mongrel.log
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/maxwiki/!svn/ver/2/trunk/log/mongrel.log
+END
+production.log
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/maxwiki/!svn/ver/2/trunk/log/production.log
+END

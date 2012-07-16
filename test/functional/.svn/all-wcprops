@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/maxwiki/!svn/ver/2/trunk/test/functional
+END
+user_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maxwiki/!svn/ver/2/trunk/test/functional/user_controller_test.rb
+END
+surveys_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/maxwiki/!svn/ver/2/trunk/test/functional/surveys_controller_test.rb
+END
+reg_admin_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maxwiki/!svn/ver/2/trunk/test/functional/reg_admin_test.rb
+END
+blog_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maxwiki/!svn/ver/2/trunk/test/functional/blog_controller_test.rb
+END
+register_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/maxwiki/!svn/ver/2/trunk/test/functional/register_controller_test.rb
+END
+attachment_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/maxwiki/!svn/ver/2/trunk/test/functional/attachment_controller_test.rb
+END
+admin_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/maxwiki/!svn/ver/2/trunk/test/functional/admin_controller_test.rb
+END
+wiki_config_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/maxwiki/!svn/ver/2/trunk/test/functional/wiki_config_controller_test.rb
+END
+mailers_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/maxwiki/!svn/ver/2/trunk/test/functional/mailers_controller_test.rb
+END
+lookups_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/maxwiki/!svn/ver/2/trunk/test/functional/lookups_controller_test.rb
+END
+survey_responses_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/maxwiki/!svn/ver/6/trunk/test/functional/survey_responses_controller_test.rb
+END
+pages_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/maxwiki/!svn/ver/2/trunk/test/functional/pages_controller_test.rb
+END
+page_renderer_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/maxwiki/!svn/ver/2/trunk/test/functional/page_renderer_test.rb
+END
+mailer_subscriptions_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/maxwiki/!svn/ver/2/trunk/test/functional/mailer_subscriptions_controller_test.rb
+END
+wiki_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maxwiki/!svn/ver/6/trunk/test/functional/wiki_controller_test.rb
+END
+events_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/maxwiki/!svn/ver/2/trunk/test/functional/events_controller_test.rb
+END
+usage_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/maxwiki/!svn/ver/6/trunk/test/functional/usage_controller_test.rb
+END
+mail_form_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/maxwiki/!svn/ver/2/trunk/test/functional/mail_form_controller_test.rb
+END
+survey_questions_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/maxwiki/!svn/ver/2/trunk/test/functional/survey_questions_controller_test.rb
+END
+mailer_groups_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/maxwiki/!svn/ver/2/trunk/test/functional/mailer_groups_controller_test.rb
+END
+teams_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/maxwiki/!svn/ver/2/trunk/test/functional/teams_controller_test.rb
+END
+emails_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/maxwiki/!svn/ver/2/trunk/test/functional/emails_controller_test.rb
+END

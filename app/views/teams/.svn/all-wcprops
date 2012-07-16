@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/maxwiki/!svn/ver/2/trunk/app/views/teams
+END
+list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maxwiki/!svn/ver/2/trunk/app/views/teams/list.rhtml
+END
+_form.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/app/views/teams/_form.rhtml
+END
+edit.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maxwiki/!svn/ver/2/trunk/app/views/teams/edit.rhtml
+END
+new.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/maxwiki/!svn/ver/2/trunk/app/views/teams/new.rhtml
+END

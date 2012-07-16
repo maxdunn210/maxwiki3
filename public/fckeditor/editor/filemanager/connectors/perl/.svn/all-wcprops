@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/editor/filemanager/connectors/perl
+END
+io.pl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/editor/filemanager/connectors/perl/io.pl
+END
+upload_fck.pl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/editor/filemanager/connectors/perl/upload_fck.pl
+END
+basexml.pl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/editor/filemanager/connectors/perl/basexml.pl
+END
+upload.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/editor/filemanager/connectors/perl/upload.cgi
+END
+util.pl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/editor/filemanager/connectors/perl/util.pl
+END
+commands.pl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/editor/filemanager/connectors/perl/commands.pl
+END
+connector.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/editor/filemanager/connectors/perl/connector.cgi
+END

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/maxwiki/!svn/ver/2/trunk/app/views/events
+END
+_form_game.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maxwiki/!svn/ver/2/trunk/app/views/events/_form_game.rhtml
+END
+_team_notes.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maxwiki/!svn/ver/2/trunk/app/views/events/_team_notes.rhtml
+END
+list_events.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maxwiki/!svn/ver/2/trunk/app/views/events/list_events.rhtml
+END
+_form.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/app/views/events/_form.rhtml
+END
+_form_event.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maxwiki/!svn/ver/2/trunk/app/views/events/_form_event.rhtml
+END
+_note.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/app/views/events/_note.rhtml
+END
+_date_length_location.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/maxwiki/!svn/ver/2/trunk/app/views/events/_date_length_location.rhtml
+END
+_teams_select.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/app/views/events/_teams_select.rhtml
+END
+list_practices.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/maxwiki/!svn/ver/2/trunk/app/views/events/list_practices.rhtml
+END
+import.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/app/views/events/import.rhtml
+END
+list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/app/views/events/list.rhtml
+END
+_form_practice.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/maxwiki/!svn/ver/2/trunk/app/views/events/_form_practice.rhtml
+END
+_level_team.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maxwiki/!svn/ver/2/trunk/app/views/events/_level_team.rhtml
+END
+edit.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/app/views/events/edit.rhtml
+END
+list_games.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maxwiki/!svn/ver/2/trunk/app/views/events/list_games.rhtml
+END
+new.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maxwiki/!svn/ver/2/trunk/app/views/events/new.rhtml
+END

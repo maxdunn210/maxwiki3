@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/app/views/mailer_subscriptions
+END
+list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/maxwiki/!svn/ver/2/trunk/app/views/mailer_subscriptions/list.rhtml
+END
+_form.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/maxwiki/!svn/ver/2/trunk/app/views/mailer_subscriptions/_form.rhtml
+END
+edit.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/maxwiki/!svn/ver/2/trunk/app/views/mailer_subscriptions/edit.rhtml
+END
+process_auto.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/maxwiki/!svn/ver/2/trunk/app/views/mailer_subscriptions/process_auto.rhtml
+END
+new.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/maxwiki/!svn/ver/2/trunk/app/views/mailer_subscriptions/new.rhtml
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/vendor/generators/max_scaffold
+END
+USAGE
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/vendor/generators/max_scaffold/USAGE
+END
+max_scaffold_generator.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/maxwiki/!svn/ver/2/trunk/vendor/generators/max_scaffold/max_scaffold_generator.rb
+END

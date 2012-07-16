@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/maxwiki/!svn/ver/2/trunk/app/helpers
+END
+surveys_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/app/helpers/surveys_helper.rb
+END
+name_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maxwiki/!svn/ver/2/trunk/app/helpers/name_helper.rb
+END
+register_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/app/helpers/register_helper.rb
+END
+reg_admin_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/app/helpers/reg_admin_helper.rb
+END
+sort_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maxwiki/!svn/ver/2/trunk/app/helpers/sort_helper.rb
+END
+admin_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/app/helpers/admin_helper.rb
+END
+adults_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/app/helpers/adults_helper.rb
+END
+lookups_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/app/helpers/lookups_helper.rb
+END
+mailers_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/app/helpers/mailers_helper.rb
+END
+player_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/app/helpers/player_helper.rb
+END
+survey_responses_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maxwiki/!svn/ver/2/trunk/app/helpers/survey_responses_helper.rb
+END
+survey_controller_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maxwiki/!svn/ver/2/trunk/app/helpers/survey_controller_helper.rb
+END
+authorization_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/maxwiki/!svn/ver/2/trunk/app/helpers/authorization_helper.rb
+END
+mailer_subscriptions_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/maxwiki/!svn/ver/2/trunk/app/helpers/mailer_subscriptions_helper.rb
+END
+application_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maxwiki/!svn/ver/2/trunk/app/helpers/application_helper.rb
+END
+cache_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/app/helpers/cache_helper.rb
+END
+wiki_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maxwiki/!svn/ver/2/trunk/app/helpers/wiki_helper.rb
+END
+events_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/app/helpers/events_helper.rb
+END
+register_application_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/maxwiki/!svn/ver/2/trunk/app/helpers/register_application_helper.rb
+END
+survey_questions_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maxwiki/!svn/ver/2/trunk/app/helpers/survey_questions_helper.rb
+END
+mailer_groups_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/maxwiki/!svn/ver/2/trunk/app/helpers/mailer_groups_helper.rb
+END
+webdav_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/app/helpers/webdav_helper.rb
+END
+google_map_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/maxwiki/!svn/ver/2/trunk/app/helpers/google_map_helper.rb
+END
+calendar_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/app/helpers/calendar_helper.rb
+END
+teams_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/app/helpers/teams_helper.rb
+END
+emails_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/app/helpers/emails_helper.rb
+END
+date_picker_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maxwiki/!svn/ver/2/trunk/app/helpers/date_picker_helper.rb
+END

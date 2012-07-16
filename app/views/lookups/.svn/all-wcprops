@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/maxwiki/!svn/ver/2/trunk/app/views/lookups
+END
+_form_lookup.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/app/views/lookups/_form_lookup.rhtml
+END
+edit_lookup.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/maxwiki/!svn/ver/2/trunk/app/views/lookups/edit_lookup.rhtml
+END
+new_lookup.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maxwiki/!svn/ver/2/trunk/app/views/lookups/new_lookup.rhtml
+END
+list_lookups.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/app/views/lookups/list_lookups.rhtml
+END

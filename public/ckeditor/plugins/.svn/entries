@@ -1,0 +1,106 @@
+10
+
+dir
+3
+http://svn.maxwiki.com/maxwiki/trunk/public/ckeditor/plugins
+http://svn.maxwiki.com/maxwiki
+
+
+
+2011-08-15T18:41:49.714277Z
+2
+maxdunn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d35e5719-2e55-4175-8896-366f131fb6a2
+
+find
+dir
+
+pagebreak
+dir
+
+pastetext
+dir
+
+div
+dir
+
+image
+dir
+
+styles
+dir
+
+scayt
+dir
+
+iframedialog
+dir
+
+a11yhelp
+dir
+
+forms
+dir
+
+table
+dir
+
+wsc
+dir
+
+liststyle
+dir
+
+pastefromword
+dir
+
+link
+dir
+
+flash
+dir
+
+colordialog
+dir
+
+templates
+dir
+
+dialog
+dir
+
+clipboard
+dir
+
+smiley
+dir
+
+tabletools
+dir
+
+about
+dir
+
+uicolor
+dir
+
+showblocks
+dir
+
+specialchar
+dir
+

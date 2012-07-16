@@ -1,0 +1,73 @@
+10
+
+dir
+3
+http://svn.maxwiki.com/maxwiki/trunk/vendor/plugins
+http://svn.maxwiki.com/maxwiki
+
+
+
+2011-08-15T18:59:57.663264Z
+3
+maxdunn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d35e5719-2e55-4175-8896-366f131fb6a2
+
+syntax-1.0.0
+dir
+
+rflickr-2006.02.01
+dir
+
+maxwiki_multihost
+dir
+
+maxwiki_webdav_auth
+dir
+
+drag_and_drop_media
+dir
+
+engines
+dir
+
+ar_fixtures
+dir
+
+maxwiki_webdav
+dir
+
+max_wiki_textile
+dir
+
+rubyzip-0.9.1
+dir
+
+upload_progress
+dir
+
+calendar_helper
+dir
+
+maxwiki_convert
+dir
+
+mime-types-1.15
+dir
+
+annotate_models
+dir
+

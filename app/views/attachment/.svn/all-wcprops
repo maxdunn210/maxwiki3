@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/maxwiki/!svn/ver/2/trunk/app/views/attachment
+END
+show.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/app/views/attachment/show.rhtml
+END
+_file_list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/maxwiki/!svn/ver/2/trunk/app/views/attachment/_file_list.rhtml
+END

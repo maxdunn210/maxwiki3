@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/maxwiki/!svn/ver/2/trunk/log/mongrel_debug
+END
+access.log
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/log/mongrel_debug/access.log
+END
+files.log
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/log/mongrel_debug/files.log
+END
+objects.log
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/log/mongrel_debug/objects.log
+END
+rails.log
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/log/mongrel_debug/rails.log
+END
+threads.log
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/log/mongrel_debug/threads.log
+END

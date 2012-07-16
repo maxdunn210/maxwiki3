@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/drag_and_drop_media/app/views/drag_and_drop_media
+END
+readme.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/drag_and_drop_media/app/views/drag_and_drop_media/readme.rhtml
+END
+_container.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/drag_and_drop_media/app/views/drag_and_drop_media/_container.rhtml
+END
+_drop.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/drag_and_drop_media/app/views/drag_and_drop_media/_drop.rhtml
+END
+_selection.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/drag_and_drop_media/app/views/drag_and_drop_media/_selection.rhtml
+END

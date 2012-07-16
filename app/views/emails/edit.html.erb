@@ -1,0 +1,28 @@
+<%-
+  @title = 'Emails'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Edit Email</h1>
+
+<%= form_tag(:controller => 'emails', :action => 'update', :id => @email) do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Save' %>
+<% end %>
+
+<table>
+	<tr>
+		<td>
+		<%= form_tag(:controller => 'emails', :action => 'index') do %> 
+		  <%= submit_tag "Cancel" %>
+		<% end %>
+		</td>
+		
+		<td>
+		<%= form_tag(:controller => 'emails', :action => 'destroy', :id => @email) do %>
+		  <%= submit_tag "Delete" %>
+		  &nbsp;
+		<% end %>
+		</td>
+	</tr>
+</table>

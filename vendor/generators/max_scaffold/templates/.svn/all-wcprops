@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/maxwiki/!svn/ver/2/trunk/vendor/generators/max_scaffold/templates
+END
+helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/maxwiki/!svn/ver/2/trunk/vendor/generators/max_scaffold/templates/helper.rb
+END
+functional_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/maxwiki/!svn/ver/2/trunk/vendor/generators/max_scaffold/templates/functional_test.rb
+END
+view_edit.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/maxwiki/!svn/ver/2/trunk/vendor/generators/max_scaffold/templates/view_edit.rhtml
+END
+controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/maxwiki/!svn/ver/2/trunk/vendor/generators/max_scaffold/templates/controller.rb
+END
+form_scaffolding.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/maxwiki/!svn/ver/2/trunk/vendor/generators/max_scaffold/templates/form_scaffolding.rhtml
+END
+style.css
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/maxwiki/!svn/ver/2/trunk/vendor/generators/max_scaffold/templates/style.css
+END
+form.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/maxwiki/!svn/ver/2/trunk/vendor/generators/max_scaffold/templates/form.rhtml
+END
+view_new.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/maxwiki/!svn/ver/2/trunk/vendor/generators/max_scaffold/templates/view_new.rhtml
+END
+view_list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/maxwiki/!svn/ver/2/trunk/vendor/generators/max_scaffold/templates/view_list.rhtml
+END

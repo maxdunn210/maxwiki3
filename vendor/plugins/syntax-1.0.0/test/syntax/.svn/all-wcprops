@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/syntax-1.0.0/test/syntax
+END
+tokenizer_testcase.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/syntax-1.0.0/test/syntax/tokenizer_testcase.rb
+END
+tc_xml.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/syntax-1.0.0/test/syntax/tc_xml.rb
+END
+tc_ruby.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/syntax-1.0.0/test/syntax/tc_ruby.rb
+END
+tc_yaml.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/syntax-1.0.0/test/syntax/tc_yaml.rb
+END

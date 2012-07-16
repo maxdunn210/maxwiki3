@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/maxwiki/!svn/ver/2/trunk/config
+END
+local_environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/config/local_environment.rb
+END
+routes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/maxwiki/!svn/ver/2/trunk/config/routes.rb
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/maxwiki/!svn/ver/2/trunk/config/database.yml
+END
+boot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/maxwiki/!svn/ver/2/trunk/config/boot.rb
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/maxwiki/!svn/ver/2/trunk/config/environment.rb
+END
+local_environment.rb.template
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/config/local_environment.rb.template
+END
+theme_defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/maxwiki/!svn/ver/2/trunk/config/theme_defaults.rb
+END
+flickr.cache
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/maxwiki/!svn/ver/2/trunk/config/flickr.cache
+END
+database.yml.template
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/config/database.yml.template
+END

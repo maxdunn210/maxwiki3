@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/maxwiki/!svn/ver/2/trunk/app/views/webdav
+END
+_webdav_browser.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maxwiki/!svn/ver/2/trunk/app/views/webdav/_webdav_browser.rhtml
+END
+_webdav_bar.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maxwiki/!svn/ver/2/trunk/app/views/webdav/_webdav_bar.rhtml
+END
+_webdav_upload.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/maxwiki/!svn/ver/2/trunk/app/views/webdav/_webdav_upload.rhtml
+END
+list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/app/views/webdav/list.rhtml
+END
+_webdav_connection_info.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/maxwiki/!svn/ver/2/trunk/app/views/webdav/_webdav_connection_info.rhtml
+END
+locked.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/app/views/webdav/locked.rhtml
+END
+checkin.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/app/views/webdav/checkin.rhtml
+END
+checkout.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/app/views/webdav/checkout.rhtml
+END
+search.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/app/views/webdav/search.rhtml
+END

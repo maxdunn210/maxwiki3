@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/maxwiki/!svn/ver/2/trunk/app/views/mailers
+END
+view.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/app/views/mailers/view.rhtml
+END
+list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/app/views/mailers/list.rhtml
+END
+_form.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/app/views/mailers/_form.rhtml
+END
+edit.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/app/views/mailers/edit.rhtml
+END
+process_emails.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maxwiki/!svn/ver/2/trunk/app/views/mailers/process_emails.rhtml
+END
+send_test.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maxwiki/!svn/ver/2/trunk/app/views/mailers/send_test.rhtml
+END
+_view.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/app/views/mailers/_view.rhtml
+END
+new.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/app/views/mailers/new.rhtml
+END

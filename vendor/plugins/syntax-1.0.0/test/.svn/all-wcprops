@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/syntax-1.0.0/test
+END
+ALL-TESTS.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/syntax-1.0.0/test/ALL-TESTS.rb
+END
+tc_syntax.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/syntax-1.0.0/test/tc_syntax.rb
+END

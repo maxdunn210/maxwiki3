@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr
+END
+contacts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/contacts.rb
+END
+groups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/groups.rb
+END
+test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/test.rb
+END
+upload.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/upload.rb
+END
+interestingness.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/interestingness.rb
+END
+people.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/people.rb
+END
+urls.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/urls.rb
+END
+notes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/notes.rb
+END
+photosets.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/photosets.rb
+END
+reflection.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/reflection.rb
+END
+pools.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/pools.rb
+END
+tags.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/tags.rb
+END
+auth.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/auth.rb
+END
+favorites.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/favorites.rb
+END
+licenses.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/licenses.rb
+END
+blogs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/blogs.rb
+END
+base.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/base.rb
+END
+transform.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/transform.rb
+END
+photos.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/rflickr-2006.02.01/lib/flickr/photos.rb
+END

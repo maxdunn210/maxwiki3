@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/maxwiki/!svn/ver/2/trunk/app/views/test
+END
+fckeditor_sample_1.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maxwiki/!svn/ver/2/trunk/app/views/test/fckeditor_sample_1.rhtml
+END
+fckeditor_sample_2.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maxwiki/!svn/ver/2/trunk/app/views/test/fckeditor_sample_2.rhtml
+END
+fckeditor_sample_3.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maxwiki/!svn/ver/2/trunk/app/views/test/fckeditor_sample_3.rhtml
+END
+drag_and_drop_media.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/maxwiki/!svn/ver/2/trunk/app/views/test/drag_and_drop_media.rhtml
+END
+index.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maxwiki/!svn/ver/2/trunk/app/views/test/index.rhtml
+END

@@ -1,0 +1,77 @@
+10
+
+dir
+3
+http://svn.maxwiki.com/maxwiki/trunk/test
+http://svn.maxwiki.com/maxwiki
+
+
+
+2011-08-15T18:41:49.714277Z
+2
+maxdunn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d35e5719-2e55-4175-8896-366f131fb6a2
+
+unit
+dir
+
+test_helper.rb
+file
+6
+
+
+
+2011-08-17T18:46:10.000000Z
+234300ee2cfa22fa9636299da5cb7747
+2011-08-18T16:18:41.041380Z
+6
+maxdunn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17801
+
+functional
+dir
+
+integration
+dir
+
+fixtures
+dir
+
+mocks
+dir
+

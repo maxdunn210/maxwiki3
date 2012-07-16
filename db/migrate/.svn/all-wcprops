@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/maxwiki/!svn/ver/2/trunk/db/migrate
+END
+006_update_events2.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/maxwiki/!svn/ver/2/trunk/db/migrate/006_update_events2.rb
+END
+033_add_title.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/db/migrate/033_add_title.rb
+END
+026_revision_content_type.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maxwiki/!svn/ver/2/trunk/db/migrate/026_revision_content_type.rb
+END
+012_add_mailers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/db/migrate/012_add_mailers.rb
+END
+034_add_page_link.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/db/migrate/034_add_page_link.rb
+END
+004_add_lookups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/db/migrate/004_add_lookups.rb
+END
+036_add_parent_to_page.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/db/migrate/036_add_parent_to_page.rb
+END
+040_add_player_remark.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/maxwiki/!svn/ver/2/trunk/db/migrate/040_add_player_remark.rb
+END
+039_add_household_volunteer_ssdeposit.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/maxwiki/!svn/ver/2/trunk/db/migrate/039_add_household_volunteer_ssdeposit.rb
+END
+030_remove_stored_file.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/db/migrate/030_remove_stored_file.rb
+END
+017_add_stored_file.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maxwiki/!svn/ver/2/trunk/db/migrate/017_add_stored_file.rb
+END
+031_survey_remove_ask_at_signup.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/maxwiki/!svn/ver/2/trunk/db/migrate/031_survey_remove_ask_at_signup.rb
+END
+018_add_config.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/db/migrate/018_add_config.rb
+END
+010_user_questions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/maxwiki/!svn/ver/2/trunk/db/migrate/010_user_questions.rb
+END
+035_page_kind.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/db/migrate/035_page_kind.rb
+END
+008_update_players.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/maxwiki/!svn/ver/2/trunk/db/migrate/008_update_players.rb
+END
+015_user_timestamps.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maxwiki/!svn/ver/2/trunk/db/migrate/015_user_timestamps.rb
+END
+007_add_page_name.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/db/migrate/007_add_page_name.rb
+END
+024_cached_files.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/db/migrate/024_cached_files.rb
+END
+021_change_to_unicode.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/maxwiki/!svn/ver/2/trunk/db/migrate/021_change_to_unicode.rb
+END
+009_access_control.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/maxwiki/!svn/ver/2/trunk/db/migrate/009_access_control.rb
+END
+001_initial_schema.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/maxwiki/!svn/ver/2/trunk/db/migrate/001_initial_schema.rb
+END
+020_allow_null.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/db/migrate/020_allow_null.rb
+END
+023_player_tryouts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/maxwiki/!svn/ver/2/trunk/db/migrate/023_player_tryouts.rb
+END
+005_update_events.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/db/migrate/005_update_events.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/maxwiki/!svn/ver/2/trunk/db/migrate/README
+END
+019_web_to_wiki.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/db/migrate/019_web_to_wiki.rb
+END
+022_update_system_wiki.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/db/migrate/022_update_system_wiki.rb
+END
+038_add_locations_usages_data.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/maxwiki/!svn/ver/2/trunk/db/migrate/038_add_locations_usages_data.rb
+END
+003_add_events.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/db/migrate/003_add_events.rb
+END
+016_add_info_checked.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maxwiki/!svn/ver/2/trunk/db/migrate/016_add_info_checked.rb
+END
+002_add_teams.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/db/migrate/002_add_teams.rb
+END
+037_add_locations_usages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maxwiki/!svn/ver/2/trunk/db/migrate/037_add_locations_usages.rb
+END
+011_add_user_paid.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/db/migrate/011_add_user_paid.rb
+END
+025_system_read_only.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maxwiki/!svn/ver/2/trunk/db/migrate/025_system_read_only.rb
+END
+032_survey_answer_restructure.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/maxwiki/!svn/ver/2/trunk/db/migrate/032_survey_answer_restructure.rb
+END
+027_add_user_auth_provider.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/maxwiki/!svn/ver/2/trunk/db/migrate/027_add_user_auth_provider.rb
+END
+014_add_user_wait_list_pos.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/maxwiki/!svn/ver/2/trunk/db/migrate/014_add_user_wait_list_pos.rb
+END
+013_add_surveys.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/db/migrate/013_add_surveys.rb
+END

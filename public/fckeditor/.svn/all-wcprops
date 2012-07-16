@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/maxwiki/!svn/ver/2/trunk/public/fckeditor
+END
+fckpackager.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/fckpackager.xml
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/license.txt
+END
+fcktemplates.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/fcktemplates.xml
+END
+_whatsnew.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/_whatsnew.html
+END
+_whatsnew_history.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/_whatsnew_history.html
+END
+fckconfig.js
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/fckconfig.js
+END
+fckeditor.js
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/fckeditor.js
+END
+fckstyles.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/fckstyles.xml
+END
+_upgrade.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/_upgrade.html
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/README.txt
+END
+_documentation.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/public/fckeditor/_documentation.html
+END

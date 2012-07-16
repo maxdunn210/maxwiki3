@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/maxwiki/!svn/ver/2/trunk/app/views/user
+END
+my_account.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/app/views/user/my_account.rhtml
+END
+_password.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/app/views/user/_password.rhtml
+END
+delete.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/app/views/user/delete.rhtml
+END
+reset_password.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/maxwiki/!svn/ver/2/trunk/app/views/user/reset_password.rhtml
+END
+signup.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/app/views/user/signup.rhtml
+END
+change_password.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/app/views/user/change_password.rhtml
+END
+login.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maxwiki/!svn/ver/2/trunk/app/views/user/login.rhtml
+END
+logout.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/app/views/user/logout.rhtml
+END
+import.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maxwiki/!svn/ver/2/trunk/app/views/user/import.rhtml
+END
+_user_left_menu.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/app/views/user/_user_left_menu.rhtml
+END
+import_done.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/maxwiki/!svn/ver/2/trunk/app/views/user/import_done.rhtml
+END
+wait_for_email.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/maxwiki/!svn/ver/2/trunk/app/views/user/wait_for_email.rhtml
+END
+_edit.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maxwiki/!svn/ver/2/trunk/app/views/user/_edit.rhtml
+END
+edit.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/maxwiki/!svn/ver/2/trunk/app/views/user/edit.rhtml
+END
+verify_signup.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maxwiki/!svn/ver/2/trunk/app/views/user/verify_signup.rhtml
+END

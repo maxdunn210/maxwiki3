@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/maxwiki/!svn/ver/2/trunk/app/views/mail_form
+END
+_mail_info.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maxwiki/!svn/ver/2/trunk/app/views/mail_form/_mail_info.rhtml
+END
+send_form.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/maxwiki/!svn/ver/2/trunk/app/views/mail_form/send_form.rhtml
+END

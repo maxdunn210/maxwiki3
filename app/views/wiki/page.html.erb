@@ -1,0 +1,7 @@
+<% if @page.kind == Page::TITLED  %>
+  <h1><%= @page.name %></h1>
+<% elsif @page.kind == Page::POST %>
+  <%= render(:partial => 'blog/post_title', :locals => {:post => @page}) %>
+<% end %>
+
+<%= render_with_erb(@page.display_content).html_safe %>

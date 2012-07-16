@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/maxwiki/!svn/ver/2/trunk/app/views/layouts
+END
+_footer.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/app/views/layouts/_footer.rhtml
+END
+_inbound_links.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maxwiki/!svn/ver/2/trunk/app/views/layouts/_inbound_links.rhtml
+END
+_columns.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/maxwiki/!svn/ver/2/trunk/app/views/layouts/_columns.rhtml
+END
+test.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/app/views/layouts/test.rhtml
+END
+_byline.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/app/views/layouts/_byline.rhtml
+END
+_menu.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/app/views/layouts/_menu.rhtml
+END
+_edit_links.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/maxwiki/!svn/ver/2/trunk/app/views/layouts/_edit_links.rhtml
+END
+main.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maxwiki/!svn/ver/2/trunk/app/views/layouts/main.rhtml
+END
+okaapi.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/app/views/layouts/okaapi.rhtml
+END
+_auto_left_menu.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maxwiki/!svn/ver/2/trunk/app/views/layouts/_auto_left_menu.rhtml
+END
+_header.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/maxwiki/!svn/ver/2/trunk/app/views/layouts/_header.rhtml
+END
+_google_map.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/maxwiki/!svn/ver/2/trunk/app/views/layouts/_google_map.rhtml
+END
+simple.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maxwiki/!svn/ver/2/trunk/app/views/layouts/simple.rhtml
+END

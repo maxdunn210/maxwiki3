@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/maxwiki/!svn/ver/2/trunk/db/migrate/data
+END
+usages.csv
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maxwiki/!svn/ver/2/trunk/db/migrate/data/usages.csv
+END
+locations.csv
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maxwiki/!svn/ver/2/trunk/db/migrate/data/locations.csv
+END

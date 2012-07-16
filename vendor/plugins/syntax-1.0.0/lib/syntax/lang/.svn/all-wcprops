@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/syntax-1.0.0/lib/syntax/lang
+END
+xml.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/syntax-1.0.0/lib/syntax/lang/xml.rb
+END
+ruby.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/syntax-1.0.0/lib/syntax/lang/ruby.rb
+END
+yaml.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/maxwiki/!svn/ver/2/trunk/vendor/plugins/syntax-1.0.0/lib/syntax/lang/yaml.rb
+END
