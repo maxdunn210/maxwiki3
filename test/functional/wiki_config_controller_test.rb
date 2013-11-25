@@ -48,7 +48,7 @@ class WikiConfigControllerTest < ActionController::TestCase
     assert_no_errors
     assert_template nil
     @wiki.reload # reload the @wiki object to pickup the new values
-    assert_equal(new_name, @wiki.config[:site_name])
+    assert_equal(new_name, @wiki.options[:site_name])
   end
   
   #------------------

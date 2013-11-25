@@ -5,11 +5,11 @@
 
 <h1>Edit Mailer</h1>
 
-<%= form_tag :controller => 'mailers', :action => 'update', :id => @mailer %>
+<%= form_tag :controller => 'mailers', :action => 'update', :id => @mailer do %>
   <%= render :partial => 'form' %>
   <%= submit_tag 'Save' %>
-<%= end_form %>
+<% end %>
 
-<%= form_tag :controller => 'mailers', :action => 'view', :id => @mailer  %> 
+<%= form_tag :controller => 'mailers', :action => 'view', :id => @mailer do %> 
   <%= submit_tag "Cancel" %>
-<%= end_form %>
+<% end %>

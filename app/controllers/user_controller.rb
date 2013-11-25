@@ -47,7 +47,7 @@ class UserController < ApplicationController
   # If PUT then we are saving the data
   #   - If any error, then go back to the previous page (which could be this controller or a wiki page)
   def signup
-    if request.method == :get
+    if request.method == 'GET'
       save_url(:last_signup_url)
       
       @user = flash[:signup_user]
@@ -63,11 +63,11 @@ class UserController < ApplicationController
         @user.wait_list_pos = User.next_wait_list_pos
       end
       
-      unless save_and_send_signup_email(true, @wiki.config[:signup_cc_to])
+      unless save_and_send_signup_email(true, @wiki.options[:signup_cc_to])
         raise SignupException
       end
       
-      unless @wiki.config[:signup_survey].blank?
+      unless @wiki.options[:signup_survey].blank?
         survey = Survey.find(params[:survey_id])
         survey.add_or_update_response(params[:answers], @user, session)      
       end
@@ -120,7 +120,7 @@ class UserController < ApplicationController
       @user.save!
       
       url = url_for(:controller => 'wiki', :action => 'show')
-      deliver_now { UserNotify.deliver_change_password(@user, url, @wiki.config) }
+      deliver_now { UserNotify.deliver_change_password(@user, url, @wiki.options) }
       flash[:notice] = "Your password has been updated, and a reminder emailed to #{@user.email}."
       redirect_to_welcome
     rescue StandardError => e
@@ -149,7 +149,7 @@ class UserController < ApplicationController
         key = @user.generate_security_token
         url = url_for(:action => 'change_password')
         url += authentication_key(key)
-        deliver_now { UserNotify.deliver_reset_password(@user, url, @wiki.config) }
+        deliver_now { UserNotify.deliver_reset_password(@user, url, @wiki.options) }
         flash.now[:notice] = "Instructions on resetting your password have been emailed to #{params[:user][:email]}"
         
         #clear out user email to provide feedback that it was processed
@@ -176,7 +176,7 @@ class UserController < ApplicationController
   end
   
   def delete
-    return if request.method == :get || params[:confirm].blank?
+    return if request.method == 'GET' || params[:confirm].blank?
     
     @user = find_user_from_session_id
     begin
@@ -184,7 +184,7 @@ class UserController < ApplicationController
         key = @user.set_delete_after
         url = url_for(:action => 'restore_deleted')
         url += authentication_key(key)
-        deliver_now {UserNotify.deliver_pending_delete(@user, url, @wiki.config)}
+        deliver_now {UserNotify.deliver_pending_delete(@user, url, @wiki.options)}
       else
         destroy(@user)
       end
@@ -233,7 +233,7 @@ class UserController < ApplicationController
   end
   
   def import
-    return if request.method == :get
+    return if request.method == 'GET'
     
     @good_emails = []
     @bad_emails = []
@@ -261,7 +261,7 @@ class UserController < ApplicationController
           mark_user_verified(user)
           user.save!
           
-          deliver_now { UserNotify.deliver_imported(user, url, password, @wiki.config) }
+          deliver_now { UserNotify.deliver_imported(user, url, password, @wiki.options) }
           @good_emails << email
         end
       rescue StandardError => e
@@ -284,7 +284,7 @@ class UserController < ApplicationController
   end
   
   def destroy(user)
-    deliver_now {UserNotify.deliver_delete(user, nil, @wiki.config)}
+    deliver_now {UserNotify.deliver_delete(user, nil, @wiki.options)}
     flash[:notice] = "The account for #{user[:login]} was successfully deleted."
     user.destroy()
   end
@@ -292,7 +292,7 @@ class UserController < ApplicationController
   # Generate a template user for certain actions on get
   def generate_blank
     case request.method
-    when :get
+    when 'GET'
       @user = User.new
       render :layout => !params[:no_layout]
       return true
@@ -341,8 +341,8 @@ class UserController < ApplicationController
         url = url_for(:controller => 'user', :action => 'complete_signup')
         url += authentication_key(key)
         
-        deliver_now { UserNotify.deliver_signup(@user, url, @wiki.config) }
-        deliver_now { UserNotify.deliver_signup(@user, url, @wiki.config, cc) } unless cc.blank? 
+        deliver_now { UserNotify.deliver_signup(@user, url, @wiki.options) }
+        deliver_now { UserNotify.deliver_signup(@user, url, @wiki.options, cc) } unless cc.blank?
         
         flash[:notice] = 'Verification email sent'
         send_ok = true
@@ -378,7 +378,7 @@ class UserController < ApplicationController
   
   def mark_user_verified(user)
     user.verified = true
-    user.role = @wiki.config[:default_role] if user.role.blank?
+    user.role = @wiki.options[:default_role] if user.role.blank?
     user.save!
   end      
   

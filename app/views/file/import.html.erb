@@ -1,5 +1,5 @@
 <p>
-<%= form_tag({}, {:multipart => true}) %>
+<%= form_tag({}, {:multipart => true}) do %>
   <p>
     File to upload:
     <br/>
@@ -19,5 +19,5 @@
     <% end %>
     
   </p>
-<%= end_form %>
+<% end %>
 </p>

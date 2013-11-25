@@ -6,7 +6,7 @@
 		<td><%= text_field 'user', 'lastname'  %></td>
 	</tr>
 
-	<% if @wiki.config[:signup_ask_company] %>
+	<% if @wiki.options[:signup_ask_company] %>
 	<tr>
 		<td><label for="user_company">Company</label></td>
 		<td><%= text_field 'user', 'company', :size => 30  %></td>

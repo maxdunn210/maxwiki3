@@ -18,7 +18,7 @@
       <li><%= link_to_page(wanted_page_name, @wiki) %> wanted by <%=
           @wiki.select(:all_pages).pages_that_reference(wanted_page_name).collect { |referring_page|            
             link_to_existing_page referring_page
-          }.sort.join(", ")
+          }.sort.join(", ").html_safe
 %></li>
     <% end %>
   </ul>

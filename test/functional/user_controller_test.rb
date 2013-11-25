@@ -173,7 +173,7 @@ class UserControllerTest < ActionController::TestCase
     ActionMailer::Base.deliveries = []
     email1 = 'test1@maxtest.com'
     email2 = 'test2@testmax.com'
-    @wiki.config[:signup_cc_to] = "#{email1}, #{email2}"   
+    @wiki.options[:signup_cc_to] = "#{email1}, #{email2}"
     @wiki.save!    
     
     post :signup, "user" => { "firstname" => FIRSTNAME, "lastname" => LASTNAME, "password" => "newpassword", "password_confirmation" => "newpassword", 
@@ -186,7 +186,7 @@ class UserControllerTest < ActionController::TestCase
   end
   
   def test_signup_survey
-    @wiki.config[:signup_survey] = 'Signup'    
+    @wiki.options[:signup_survey] = 'Signup'
     @wiki.save!
     
     get :signup
@@ -380,7 +380,7 @@ class UserControllerTest < ActionController::TestCase
     assert_equal email, mail.to_addrs[0].to_s
     assert_match(/Dear #{firstname} #{lastname}/, mail.encoded)
     assert_match(/Your login name is: #{login}/, mail.encoded)
-    assert_match(/#{@controller.wiki.config[:site_name]}/, mail.encoded)
+    assert_match(/#{@controller.wiki.options[:site_name]}/, mail.encoded)
     assert_match(/http:\/\/#{@request.host}/, mail.encoded)
     mail
   end

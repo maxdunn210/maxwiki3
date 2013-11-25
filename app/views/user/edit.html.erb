@@ -39,11 +39,11 @@
   </tr>
 </table>
 
-<%= end_form %>
+<% end %>
 
 <% if @user.auth_provider == User %>
   <%= form_tag :controller => 'user', :action => 'delete' %>
     <%= submit_tag "Delete My Account" %>
-  <%= end_form %>
+  <% end %>
 <% end %>
 

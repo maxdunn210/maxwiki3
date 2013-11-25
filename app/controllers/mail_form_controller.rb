@@ -11,7 +11,7 @@ class MailFormController < ApplicationController
       if params[:capcha] && (params[:capcha].downcase.gsub(' ', '') != 'notspam')
         flash.now[:error] = "There was an error in the capcha field. Please press the browsers Back button and re-enter the information."
       else
-        deliver_now { MailFormNotify.deliver_send_form(@form_info, @wiki.config) }
+        deliver_now { MailFormNotify.deliver_send_form(@form_info, @wiki.options) }
         @sent_ok = true
       end
     rescue StandardError => e

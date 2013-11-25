@@ -58,5 +58,5 @@ MY_CONFIG = {}
 # The local_environment.rb file is specific to each install, so it should be added to the SVN ignore list and
 # recreated from local_environment.rb.template
 require File.expand_path('../local_environment', __FILE__)
-require 'rails_patches'
+# MD DEBUG require 'rails_patches'
 

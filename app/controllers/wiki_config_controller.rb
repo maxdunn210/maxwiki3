@@ -16,9 +16,9 @@ class WikiConfigController < ApplicationController
   def index
   end
   
-  def config
+  def options
     # Put all config variables in an object that option tag helpers can use
-    @config = HashAsObject.new(@wiki.config)
+    @config = HashAsObject.new(@wiki.options)
     
     @config_template = params[:template]
     item = WIKI_CONFIG_ITEMS.find {|i| i[:template] == params[:template]}
@@ -39,8 +39,8 @@ class WikiConfigController < ApplicationController
         end
       end
       
-      @wiki.config = {} if @wiki.config.nil?
-      @wiki.config.merge!(params_using_symbols)
+      @wiki.config = {} if @wiki.options.nil?
+      @wiki.options.merge!(params_using_symbols)
       
       if @wiki.save
         flash[:notice] = "Configuration saved"

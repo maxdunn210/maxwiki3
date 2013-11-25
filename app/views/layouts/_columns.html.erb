@@ -1,7 +1,8 @@
 <% if @left_column_show %>
   <div id="left_column">
-<% debugger %>    
-  <%= render(:partial => @left_column_partial, :locals => @left_column_hash) %>
+    <% if @left_column_partial %>
+      <%= render(:partial => @left_column_partial, :locals => @left_column_hash) %>
+    <% end %>  
   </div>
 <% end %>  
   

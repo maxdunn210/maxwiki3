@@ -54,7 +54,7 @@ module MaxWiki
         
       elsif !host_map[:redirect_to].nil?
         headers["Status"] = "301 Moved Permanently"
-        url = "http://#{host_map[:redirect_to]}#{request.request_uri}"
+        url = "http://#{host_map[:redirect_to]}#{request.full_path}"
         redirect_to(url)
       else
         name = host_map[:name]

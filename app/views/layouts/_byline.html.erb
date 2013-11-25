@@ -7,9 +7,9 @@
   <% end %>
     <%= revision_link %> on <%= format_date(@page.revised_at) %> 
     <% if MY_CONFIG[:hide_byline_author_link]  %>   
-      by <%= @page.author.name %>
+      by <%= @page.author.name.html_safe %>
     <% else %>
-      by <%= author_link(@page) %>
+      by <%= author_link(@page).html_safe %>
     <% end %>
     <%= "(#{@page.author.ip})" if @page.author.respond_to?(:ip) %>
     <% if @wiki.count_pages? %>

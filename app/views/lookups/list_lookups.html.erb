@@ -45,7 +45,7 @@
 <% end -%>
   
 <% if Role.check_role(ROLE_EDITOR) -%>  
-	<%= form_tag :controller => 'lookups', :action => 'new_lookup' %>
+	<%= form_tag :controller => 'lookups', :action => 'new_lookup' do %>
 	  <%= submit_tag "Add Another" %>
-	<%= end_form %>
+	<% end %>
 <% end %>

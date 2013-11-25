@@ -12,22 +12,22 @@
 <table>
 	<tr>
 	  <td>
-      <%= form_tag :controller => 'mailers', :action => 'edit', :id => @mailer %>
+      <%= form_tag :controller => 'mailers', :action => 'edit', :id => @mailer do %>
         <%= submit_tag 'Edit' %>
-      <%= end_form %>	
+      <% end %>	
     </td>
     
 		<td>
-		<%= form_tag :controller => 'mailers', :action => 'destroy', :id => @mailer %>
+		<%= form_tag :controller => 'mailers', :action => 'destroy', :id => @mailer do %>
 		  <%= submit_tag "Delete" %>
-		<%= end_form %>
+		<% end %>
 		</td>
 
 		<td>
-		<%= form_tag :controller => 'mailers', :action => 'list' %>
+		<%= form_tag :controller => 'mailers', :action => 'list' do %>
 		  <%= submit_tag "Cancel" %>
 		  &nbsp;
-		<%= end_form %>
+		<% end %>
 		</td>
 	</tr>
 </table>
@@ -37,15 +37,15 @@
 <table>
 	<tr>
 	  <td>
-      <%= form_tag :controller => 'mailers', :action => 'send_test', :id => @mailer %> 
+      <%= form_tag :controller => 'mailers', :action => 'send_test', :id => @mailer do %> 
         <%= submit_tag "Test" %>
-      <%= end_form %>
+      <% end %>
 		</td>
 
 	  <td>
-      <%= form_tag :controller => 'mailers', :action => 'process_emails', :id => @mailer %> 
+      <%= form_tag :controller => 'mailers', :action => 'process_emails', :id => @mailer do %> 
         <%= submit_tag "Process" %>
-      <%= end_form %>
+      <% end %>
 		</td>
 	</tr>
 </table>

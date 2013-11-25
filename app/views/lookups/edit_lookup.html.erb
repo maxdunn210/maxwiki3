@@ -5,24 +5,24 @@
 
 <h1>Edit Lookup</h1>
 
-<%= form_tag :controller => 'lookups', :action => 'update_lookup', :id => @lookup %>
+<%= form_tag :controller => 'lookups', :action => 'update_lookup', :id => @lookup do %>
   <%= render :partial => 'form_lookup' %>
   <%= submit_tag 'Save' %>
-<%= end_form %>
+<% end %>
 
 <table>
 	<tr>
 		<td>
-		<%= form_tag :controller => 'lookups', :action => 'index' %> 
+		<%= form_tag :controller => 'lookups', :action => 'index' do %> 
 		  <%= submit_tag "Cancel" %>
-		<%= end_form %>
+		<% end %>
 		</td>
 		
 		<td>
-		<%= form_tag :controller => 'lookups', :action => 'destroy_lookup', :id => @lookup %>
+		<%= form_tag :controller => 'lookups', :action => 'destroy_lookup', :id => @lookup do %>
 		  <%= submit_tag "Delete" %>
 		  &nbsp;
-		<%= end_form %>
+		<% end %>
 		</td>
 	</tr>
 </table>

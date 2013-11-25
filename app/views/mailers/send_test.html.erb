@@ -18,15 +18,15 @@
 <table>
 	<tr>
 	  <td>
-      <%= form_tag :controller => 'emails', :action => 'send_emails'  %> 
+      <%= form_tag :controller => 'emails', :action => 'send_emails' do %> 
         <%= submit_tag "Send Email" %>
-      <%= end_form %>
+      <% end %>
 		</td>
 
 	  <td>
-      <%= form_tag :controller => 'mailers', :action => 'view', :id => @mailer  %> 
+      <%= form_tag :controller => 'mailers', :action => 'view', :id => @mailer do %> 
         <%= submit_tag "Back" %>
-      <%= end_form %>
+      <% end %>
 		</td>
 	</tr>
 </table>

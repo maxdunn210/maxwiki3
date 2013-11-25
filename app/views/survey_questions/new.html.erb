@@ -8,8 +8,8 @@
 <%= form_tag :controller => 'survey_questions', :action => 'create', :survey_id => @survey_id %>
   <%= render :partial => 'form' %>
   <%= submit_tag "Create" %>
-<%= end_form %>
+<% end %>
 
 <%= form_tag :controller => 'survey_questions', :action => 'index', :survey_id => @survey_id %> 
   <%= submit_tag "Cancel" %>
-<%= end_form %>
+<% end %>

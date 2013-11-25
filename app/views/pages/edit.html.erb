@@ -8,7 +8,7 @@
 <!-- Show the errors, if any -->
 <%- if @page %> <%= error_messages_for 'page' %> <% end -%>
 
-<%= form_tag :action => 'update', :id => @page.id %>
+<%= form_tag :action => 'update', :id => @page.id do %>
 <table>
   <tr>
     <td colspan='3'><b>Page:</b></td>
@@ -86,5 +86,5 @@
   
   <br>
   <%= submit_tag 'Update' %>
-<%= end_form %>
+<% end %>
 

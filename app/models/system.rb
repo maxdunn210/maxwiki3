@@ -5,7 +5,7 @@
 #
 
 class System < MaxWikiActiveRecord
-  set_table_name 'system'
+  self.table_name = 'system'
   
   cattr_accessor :storage_path, :logger
   self.storage_path = "#{Rails.root.to_s}/storage/"

@@ -1,6 +1,6 @@
 xml.rss('version' => '2.0') do
   xml.channel do
-    xml.title(@wiki.config[:site_name])
+    xml.title(@wiki.options[:site_name])
     xml.link(url_for(:only_path => false, :web => @web_name, :action => @link_action, :link => 'homepage'))
     xml.description(@wiki.description)
     xml.language('en-us')

@@ -224,7 +224,7 @@ private
       :lat => "37.31932181336203",
       :zoom => "15",
       :marker => true,
-      :key => @wiki.config[:google_key],
+      :key => @wiki.options[:google_key],
       :gmapid => 'gmap' + rand(10000).to_s  }
   end
   

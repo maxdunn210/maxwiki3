@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -46,6 +47,37 @@ ActiveRecord::Schema.define(:version => 40) do
     t.text     "auth_extra"
   end
 
+  create_table "concepts", :force => true do |t|
+    t.integer "parent_id",   :default => -1
+    t.integer "document_id", :default => -1
+    t.integer "nchildren",   :default => -1
+    t.integer "ndocs",       :default => -1
+    t.integer "level",       :default => -1
+    t.text    "v"
+    t.float   "q",           :default => 0.0
+    t.float   "d",           :default => 0.0
+    t.integer "x"
+    t.text    "terms"
+    t.integer "gen2"
+    t.integer "gen3"
+    t.integer "gen4"
+    t.integer "gen5"
+  end
+
+  add_index "concepts", ["document_id"], :name => "document_id"
+  add_index "concepts", ["parent_id"], :name => "parent_id"
+
+  create_table "cvectors", :id => false, :force => true do |t|
+    t.integer "length",                           :default => -1
+    t.binary  "fvector",    :limit => 2147483647
+    t.integer "concept_id",                       :default => -1
+    t.integer "tlength"
+    t.binary  "tvector"
+    t.integer "total_size"
+  end
+
+  add_index "cvectors", ["concept_id"], :name => "concept_id", :unique => true
+
   create_table "doctors", :force => true do |t|
     t.integer "household_id",                  :default => 0
     t.string  "healthplan",     :limit => 100, :default => "", :null => false
@@ -56,6 +88,37 @@ ActiveRecord::Schema.define(:version => 40) do
     t.integer "wiki_id"
   end
 
+  create_table "document_to_words", :force => true do |t|
+    t.integer "document_id"
+    t.binary  "counts_list"
+    t.binary  "words_list"
+    t.integer "length",      :default => -1
+  end
+
+  add_index "document_to_words", ["document_id"], :name => "document_id", :unique => true
+
+  create_table "documents", :force => true do |t|
+    t.string  "title",          :limit => 128, :default => "", :null => false
+    t.text    "location",                                      :null => false
+    t.text    "source",                                        :null => false
+    t.integer "location_index",                                :null => false
+    t.integer "total_words",                   :default => -1, :null => false
+    t.integer "unique_words",                  :default => -1, :null => false
+    t.text    "excerpt",                                       :null => false
+    t.integer "alpha",                         :default => 0,  :null => false
+  end
+
+  add_index "documents", ["alpha"], :name => "alpha"
+
+  create_table "dvectors", :id => false, :force => true do |t|
+    t.integer "length",                            :default => -1
+    t.binary  "fvector",     :limit => 2147483647
+    t.integer "document_id",                       :default => -1
+    t.integer "total_size",                        :default => 0
+  end
+
+  add_index "dvectors", ["document_id"], :name => "document_id"
+
   create_table "emails", :force => true do |t|
     t.integer  "mailer_id"
     t.integer  "user_id"
@@ -64,8 +127,8 @@ ActiveRecord::Schema.define(:version => 40) do
     t.datetime "updated_at"
     t.string   "from"
     t.string   "to"
-    t.integer  "last_send_attempt", :default => 0
-    t.text     "mail"
+    t.integer  "last_send_attempt",                     :default => 0
+    t.text     "mail",              :limit => 16777215
     t.integer  "wiki_id"
   end
 
@@ -152,12 +215,10 @@ ActiveRecord::Schema.define(:version => 40) do
     t.integer  "wiki_id"
   end
 
-  add_index "old_survey_answers", ["id"], :name => "id"
-
   create_table "pages", :force => true do |t|
     t.datetime "created_at",                                             :null => false
     t.datetime "updated_at",                                             :null => false
-    t.integer  "wiki_id",                                                :null => false
+    t.integer  "wiki_id"
     t.string   "locked_by",          :limit => 60
     t.string   "name",               :limit => 60
     t.datetime "locked_at"
@@ -203,12 +264,17 @@ ActiveRecord::Schema.define(:version => 40) do
     t.string   "remarks",              :limit => 100, :default => ""
   end
 
+  create_table "plugin_schema_info", :id => false, :force => true do |t|
+    t.string  "plugin_name"
+    t.integer "version"
+  end
+
   create_table "revisions", :force => true do |t|
-    t.datetime "created_at",                 :null => false
-    t.datetime "updated_at",                 :null => false
-    t.datetime "revised_at",                 :null => false
-    t.integer  "page_id",                    :null => false
-    t.text     "content",                    :null => false
+    t.datetime "created_at",                                      :null => false
+    t.datetime "updated_at",                                      :null => false
+    t.datetime "revised_at",                                      :null => false
+    t.integer  "page_id",                          :default => 0, :null => false
+    t.text     "content",      :limit => 16777215,                :null => false
     t.string   "author",       :limit => 60
     t.string   "ip",           :limit => 60
     t.integer  "wiki_id"
@@ -221,7 +287,7 @@ ActiveRecord::Schema.define(:version => 40) do
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id"
-    t.binary   "data"
+    t.text     "data",       :limit => 16777215
     t.datetime "updated_at"
   end
 
@@ -233,17 +299,6 @@ ActiveRecord::Schema.define(:version => 40) do
     t.integer "survey_question_id"
     t.string  "answer"
     t.integer "wiki_id"
-  end
-
-  create_table "survey_answers_hide", :force => true do |t|
-    t.integer  "survey_id"
-    t.integer  "survey_question_id"
-    t.string   "response"
-    t.integer  "user_id"
-    t.string   "submitter_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "wiki_id"
   end
 
   create_table "survey_questions", :force => true do |t|
@@ -292,6 +347,19 @@ ActiveRecord::Schema.define(:version => 40) do
     t.integer "wiki_id"
   end
 
+  create_table "temp_concepts", :force => true do |t|
+    t.integer "nchildren"
+    t.integer "ndocs"
+  end
+
+  create_table "temp_words", :id => false, :force => true do |t|
+    t.integer "word_id",        :null => false
+    t.binary  "documents_list", :null => false
+    t.integer "length"
+  end
+
+  add_index "temp_words", ["word_id"], :name => "word_id"
+
   create_table "usages", :force => true do |t|
     t.integer "location_id"
     t.float   "value"
@@ -299,11 +367,11 @@ ActiveRecord::Schema.define(:version => 40) do
   end
 
   create_table "wiki_files", :force => true do |t|
-    t.datetime "created_at",           :null => false
-    t.datetime "updated_at",           :null => false
-    t.integer  "wiki_id",              :null => false
-    t.string   "file_name"
-    t.string   "description"
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
+    t.integer  "wiki_id"
+    t.string   "file_name",            :default => "", :null => false
+    t.string   "description",          :default => "", :null => false
     t.string   "source_uri"
     t.string   "source_type"
     t.string   "detect_change_marker"
@@ -316,11 +384,11 @@ ActiveRecord::Schema.define(:version => 40) do
   end
 
   create_table "wiki_references", :force => true do |t|
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
-    t.integer  "page_id",                       :null => false
-    t.string   "referenced_name", :limit => 60, :null => false
-    t.string   "link_type",       :limit => 1,  :null => false
+    t.datetime "created_at",                                    :null => false
+    t.datetime "updated_at",                                    :null => false
+    t.integer  "page_id",                       :default => 0,  :null => false
+    t.string   "referenced_name", :limit => 60, :default => "", :null => false
+    t.string   "link_type",       :limit => 1,  :default => "", :null => false
     t.integer  "wiki_id"
   end
 
@@ -328,21 +396,41 @@ ActiveRecord::Schema.define(:version => 40) do
   add_index "wiki_references", ["referenced_name"], :name => "wiki_references_referenced_name_index"
 
   create_table "wikis", :force => true do |t|
-    t.datetime "created_at",                                              :null => false
-    t.datetime "updated_at",                                              :null => false
-    t.string   "description",        :limit => 60,                        :null => false
-    t.string   "name",               :limit => 60,                        :null => false
+    t.datetime "created_at",                                                    :null => false
+    t.datetime "updated_at",                                                    :null => false
+    t.string   "description",        :limit => 60
+    t.string   "name",               :limit => 60
     t.string   "additional_style"
-    t.integer  "allow_uploads",                    :default => 1
-    t.integer  "published",                        :default => 0
-    t.integer  "count_pages",                      :default => 0
-    t.string   "markup",             :limit => 50, :default => "textile"
-    t.string   "color",              :limit => 6,  :default => "008B26"
-    t.integer  "max_upload_size",                  :default => 100
-    t.integer  "safe_mode",                        :default => 0
-    t.integer  "brackets_only",                    :default => 0
-    t.text     "config"
-    t.integer  "wiki_file_next_num",               :default => 0
+    t.integer  "allow_uploads",                          :default => 1
+    t.integer  "published",                              :default => 0
+    t.integer  "count_pages",                            :default => 0
+    t.string   "markup",             :limit => 50,       :default => "textile"
+    t.string   "color",              :limit => 6,        :default => "008B26"
+    t.integer  "max_upload_size",                        :default => 100
+    t.integer  "safe_mode",                              :default => 0
+    t.integer  "brackets_only",                          :default => 0
+    t.text     "config",             :limit => 16777215
+    t.integer  "wiki_file_next_num",                     :default => 0
   end
+
+  create_table "word_to_documents", :force => true do |t|
+    t.integer "word_id"
+    t.binary  "documents_list"
+    t.integer "length",         :default => -1
+  end
+
+  add_index "word_to_documents", ["word_id"], :name => "word_id", :unique => true
+
+  create_table "words", :force => true do |t|
+    t.string  "text",     :limit => 16
+    t.integer "dcount",                 :default => -1
+    t.integer "didf",                   :default => -1
+    t.boolean "stopword",               :default => false
+    t.string  "original", :limit => 16
+    t.integer "alpha",                                     :null => false
+  end
+
+  add_index "words", ["alpha"], :name => "alpha"
+  add_index "words", ["text"], :name => "text", :unique => true
 
 end

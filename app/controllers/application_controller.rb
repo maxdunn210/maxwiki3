@@ -74,7 +74,7 @@ class ApplicationController < AuthorizationController
   protected
   
   def connect_to_model
-    @system = System.find(:first)
+    @system = System.first
     return if @system.nil?
     MaxWikiActiveRecord.system_read_only_mode = @system.read_only_mode?
     MaxWikiActiveRecord.system_read_only_msg = @system.read_only_msg
@@ -105,8 +105,8 @@ class ApplicationController < AuthorizationController
     #  
     if @wiki.nil?
       return unless @wiki_name.blank? # Found the wiki_name, but need to setup this wiki
-      
-      @wiki = Wiki.find(:first)
+
+      @wiki = Wiki.first
       return if @wiki.nil? # if no wikis found, need to setup the system
       
       MaxWikiActiveRecord.current_wiki = @wiki
@@ -123,11 +123,11 @@ class ApplicationController < AuthorizationController
     # but we still only want to load it once
     load "#{Rails.root.to_s}/config/theme_defaults.rb"
     unless @wiki.nil? 
-      unless @wiki.config[:theme].blank?
-        name = "#{Rails.root.to_s}/public/themes/#{@wiki.config[:theme]}/theme_environment.rb"
+      unless @wiki.options[:theme].blank?
+        name = "#{Rails.root.to_s}/public/themes/#{@wiki.options[:theme]}/theme_environment.rb"
         load name if File.exist?(name)
         
-        name = "#{Rails.root.to_s}/public/themes/#{@wiki.config[:theme]}/theme_helper.rb"
+        name = "#{Rails.root.to_s}/public/themes/#{@wiki.options[:theme]}/theme_helper.rb"
         require name if File.exist?(name)
       end
       unless @wiki.name.blank?
@@ -167,7 +167,7 @@ class ApplicationController < AuthorizationController
     end  
     
     # Set some configuration defaults
-    @wiki.config[:default_role] = MY_CONFIG[:default_role] || ROLE_USER if @wiki.config[:default_role].blank?
+    @wiki.options[:default_role] = MY_CONFIG[:default_role] || ROLE_USER if @wiki.options[:default_role].blank?
     
     # Set defaults for Admin or other controllers that aren't wiki pages    
     @left_column_show = TRUE
@@ -215,7 +215,7 @@ class ApplicationController < AuthorizationController
   end
   
   def remember_location
-    if request.method == :get and 
+    if request.method == 'GET' and 
       response.headers['Status'] == '200 OK' and not
         %w(locked save back file pic import login logout).include?(action_name)
       store_location  
@@ -223,7 +223,7 @@ class ApplicationController < AuthorizationController
   end
   
   def store_location
-    session[:return_to] = request.request_uri
+    session[:return_to] = request.fullpath 
     logger.debug "Session ##{session.object_id}: remembered URL '#{session[:return_to]}'"
   end
   
@@ -285,7 +285,7 @@ class ApplicationController < AuthorizationController
   end
   
   def save_url(name)
-    session[name] = request.request_uri
+    session[name] = request.full_path
   end
   
   def flash_to_cookie
@@ -359,7 +359,7 @@ end
 module ActionView::Helpers::AssetTagHelper
   
   def theme_dir
-    'themes/' + @wiki.config[:theme]
+    'themes/' + @wiki.options[:theme]
   end
   
   def theme_path(source, sub_dir)
@@ -367,7 +367,7 @@ module ActionView::Helpers::AssetTagHelper
     unless source.first == "/" || source.include?(":")
       if File.exists?(File.join(Rails.root.to_s, 'public', 'files', @wiki.name, source))
         path = File.join('/files', @wiki.name, source)
-      elsif !@wiki.config[:theme].blank? && 
+      elsif !@wiki.options[:theme].blank? &&
         File.exist?(File.join(Rails.root.to_s, 'public', theme_dir, sub_dir, source))
         path = File.join('/' + theme_dir, sub_dir, source)
       end

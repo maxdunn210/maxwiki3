@@ -11,11 +11,11 @@
 	<tr>
 	<td>
 		<%= form_tag :action => 'destroy', :id => @player %> <%= submit_tag "Delete" %>
-		<%= end_form %>
+		<% end %>
 	</td>
 	<td>
 		<%= form_tag :action => 'show', :id => @player %> <%= submit_tag "Cancel" %>
-		<%= end_form %>
+		<% end %>
 	</td>
 	</tr>
 </table>

@@ -277,7 +277,7 @@ class WikiControllerTest < ActionController::TestCase
   
   def test_locked_page
     login_editor
-    @wiki.config[:editor] = 'textile'    
+    @wiki.options[:editor] = 'textile'
     @wiki.save!
     page = Page.find_by_name(HTML_PAGE)
     
@@ -369,7 +369,7 @@ class WikiControllerTest < ActionController::TestCase
   def test_content_textile_textile
     login_editor
     
-    @wiki.config[:editor] = 'textile'    
+    @wiki.options[:editor] = 'textile'
     @wiki.save!
     assert_content_type(TEXTILE_PAGE_LINK, :textile)
   end
@@ -377,7 +377,7 @@ class WikiControllerTest < ActionController::TestCase
   def test_content_textile_wysiwyg
     login_editor
     
-    @wiki.config[:editor] = 'textile'    
+    @wiki.options[:editor] = 'textile'
     @wiki.save!
     assert_content_type(HTML_PAGE_LINK, :html)
   end
@@ -385,7 +385,7 @@ class WikiControllerTest < ActionController::TestCase
   def test_content_wysiwyg_textile
     login_editor
     
-    @wiki.config[:editor] = 'wysiwyg'    
+    @wiki.options[:editor] = 'wysiwyg'
     @wiki.save!
     assert_content_type(TEXTILE_PAGE_LINK, :html)
   end
@@ -393,7 +393,7 @@ class WikiControllerTest < ActionController::TestCase
   def test_content_wysiwyg_wysiwyg
     login_editor
     
-    @wiki.config[:editor] = 'wysiwyg'    
+    @wiki.options[:editor] = 'wysiwyg'
     @wiki.save!
     assert_content_type(HTML_PAGE_LINK, :html)
   end
@@ -442,7 +442,7 @@ class WikiControllerTest < ActionController::TestCase
   end
   
   def test_convert
-    @wiki.config[:editor] = 'wysiwyg'    
+    @wiki.options[:editor] = 'wysiwyg'
     @wiki.save!
     
     result = convert_for_edit

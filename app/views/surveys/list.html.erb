@@ -49,5 +49,5 @@
 <% if Role.check_role(ROLE_EDITOR) -%>  
 	<%= form_tag :controller => 'surveys', :action => 'new' %>
 	  <%= submit_tag "Add Another" %>
-	<%= end_form %>
+	<% end %>
 <% end %>

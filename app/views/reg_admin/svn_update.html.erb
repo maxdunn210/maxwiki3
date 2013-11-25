@@ -7,7 +7,7 @@
 
 <p>Please enter your SVN username and password to update the web site:</p>
 
-<%= form_tag :action =>'do_svn_update' %>
+<%= form_tag :action =>'do_svn_update' do %>
   <table>
   <tr>
   <td>SVN Username:</td><td> <%= text_field 'reg_admin', 'svn_username' %></td>
@@ -17,5 +17,5 @@
   </table>
   <%= submit_tag('Submit') %>
   
-<%= end_form %>
+<% end %>
 

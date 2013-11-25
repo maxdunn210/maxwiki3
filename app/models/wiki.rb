@@ -293,19 +293,20 @@ EOF
     case mode
     when :export
       if known_page 
-        %{<a class="#{EXISTING_PAGE_CLASS}" href="/#{cgi_link}.html">#{text}</a>}
+        link = %{<a class="#{EXISTING_PAGE_CLASS}" href="/#{cgi_link}.html">#{text}</a>}
       else 
-        %{<span class="#{NEW_PAGE_CLASS}">#{text}</span>} 
+        link = %{<span class="#{NEW_PAGE_CLASS}">#{text}</span>} 
       end
     else 
       if known_page
         href = url_for :controller => 'wiki', :action => 'show', :link => cgi_link, :only_path => true
-        %{<a class="#{EXISTING_PAGE_CLASS}" href="#{href}">#{text}</a>}
+        link = %{<a class="#{EXISTING_PAGE_CLASS}" href="#{href}">#{text}</a>}
       else 
         href = url_for :controller => 'wiki', :action => 'show', :link => cgi_link, :only_path => true
-        %{<span class="#{NEW_PAGE_CLASS}"><a href="#{href}">#{text}?</a></span>}
+        link = %{<span class="#{NEW_PAGE_CLASS}"><a href="#{href}">#{text}?</a></span>}
       end
     end
+    link.html_safe
   end
   
   # Returns an array of all the wiki words in any current revision

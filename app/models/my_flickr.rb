@@ -4,7 +4,7 @@ class MyFlickr < Flickr
 
   def initialize
     if MY_CONFIG[:rflickr_lib]
-      super(MY_CONFIG[:flickr_cache_file], @wiki.config[:flickr_key], @wiki.config[:flickr_shared_secret])
+      super(MY_CONFIG[:flickr_cache_file], @wiki.options[:flickr_key], @wiki.options[:flickr_shared_secret])
     else  
       super
     end

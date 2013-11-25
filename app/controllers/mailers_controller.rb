@@ -154,7 +154,7 @@ class MailersController < ApplicationController
     email.mailer_id = mailer.id
     email.user_id = user.id
     email.status = EMAIL_QUEUED
-    email.from = @wiki.config[:email_from]
+    email.from = @wiki.options[:email_from]
     email.to = user.email
     
     #set @user for rendering content

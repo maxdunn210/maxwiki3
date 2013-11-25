@@ -36,9 +36,9 @@
 <%= pagination_template(@users) %>
 
  
-<%= form_tag( {:action => 'new_user'}, {:method => 'get'} ) %>
+<%= form_tag( {:action => 'new_user'}, {:method => 'get'} ) do %>
   <%= submit_tag "Add Another" %>
-<%= end_form %>
+<% end %>
 
 
 

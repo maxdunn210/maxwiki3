@@ -24,17 +24,11 @@ function simpleUnescape(val) {
 }		  
 
 function hideClass(name) {
-  allNodes = document.getElementsByClassName(name);
-  for(i = 0; i < allNodes.length; i++) {
-    Element.hide(allNodes[i]);
-  }  
+  $('.' + name).css('display', 'none');
 }    
 
 function showClass(name) {
-  allNodes = document.getElementsByClassName(name);
-  for(i = 0; i < allNodes.length; i++) {
-    $(allNodes[i]).style.display = 'inline';
-  }  
+  $('.' + name).css('display', 'inline');
 }    
 
 function hideMarkers(name, marker) {

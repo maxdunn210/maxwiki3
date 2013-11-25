@@ -43,7 +43,7 @@
 <% end -%>
   
 <% if Role.check_role(ROLE_EDITOR) -%>  
-	<%= form_tag :controller => 'mailer_subscriptions', :action => 'new' %>
+	<%= form_tag :controller => 'mailer_subscriptions', :action => 'new' do %>
 	  <%= submit_tag "Add Another" %>
-	<%= end_form %>
+	<% end %>
 <% end %>

@@ -348,7 +348,7 @@ class RegisterController < ApplicationController
         deliver_now { RegNotifyPlayer.deliver_signup_player(@player, @player.household, 
                                                             @player.household.adult1,@player.household.adult2,
                                                             @player.household.doctor, @player.household.emer_contact, 
-                                                            @wiki.config[:email_from], url, @wiki.config) }
+                                                            @wiki.options[:email_from], url, @wiki.options) }
         flash[:notice] << ' and a confirmation email was sent.'
       end
     rescue StandardError => e

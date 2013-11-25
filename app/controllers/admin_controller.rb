@@ -9,7 +9,7 @@ class AdminController < ApplicationController
       flash[:error] = "System has already been created."
       redirect_home
       return
-    elsif request.method == :get
+    elsif request.method == 'GET'
       # no form submitted -> go to template
       @system = System.new
       @system.name = System::DEFAULT_NAME
@@ -38,7 +38,7 @@ class AdminController < ApplicationController
       @wiki_exists = true
       flash.now[:error] = "Wiki '#{@wiki.name}' has already been created."
       return
-    elsif request.method == :get
+    elsif request.method == 'GET'
       # no form submitted -> go to template
       @wiki = Wiki.new
       @wiki.name = @wiki_name
@@ -131,12 +131,12 @@ class AdminController < ApplicationController
     hash[:config].inject({}) {|key, value| params_using_symbols[key.to_sym] = value}
   end
   
-  def config
+  def options
     if request.post? && params[:config]
       params_using_symbols = params[:config].symbolize_keys
       
-      @wiki.config = {} if @wiki.config.nil?
-      @wiki.config.merge(params_using_symbols)
+      @wiki.config = {} if @wiki.options.nil?
+      @wiki.options.merge(params_using_symbols)
       if @wiki.save
         flash.now[:notice] = "Configuration saved"
       else

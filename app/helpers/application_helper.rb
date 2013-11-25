@@ -114,7 +114,7 @@ include WebdavHelper
   end
   
   def tag_li_href_selected(name, page='', action_names='', image_marker = '')
-    '<li>' + tag_href_selected(name, page, action_names, image_marker) + "</li>\n"
+    ('<li>' + tag_href_selected(name, page, action_names, image_marker) + "</li>\n").html_safe
   end
   
   PREVIOUS = '< Previous' unless defined? PREVIOUS
@@ -162,7 +162,7 @@ include WebdavHelper
     html << '</form>'
     html << "\n"
     html << "<br />\n<br />\n" unless options[:suppress_spacing]
-    html
+    html.html_safe
   end
   
   def blog_pagination(pages, link)
@@ -187,7 +187,7 @@ include WebdavHelper
     end  
 
     html << "\n<br />\n<br />\n"
-    html
+    html.html_safe
   end
   
   def xml_encode(text)
@@ -202,18 +202,18 @@ include WebdavHelper
     encoded_email = url_encode(email)
     encoded_mailto = xml_encode("mailto:" + encoded_email)
     mangled_email = email.gsub!(/@/, ' at ').gsub!(/\./, ' dot ')
-    "<a href=\"#{encoded_mailto}\">#{mangled_email}</a>"
+    "<a href=\"#{encoded_mailto}\">#{mangled_email}</a>".html_safe
   end   
   
   def safe_cmds
     ['image_path', 'file_path', 'link_to', 'render', 
      '@title', 'image_tag', 'true', 'false', 
      '@level_both', '@level_business', '@level_personal'] + 
-    ApplicationHelper.public_instance_methods
+    ApplicationHelper.public_instance_methods.map {|cmd| cmd.to_s}
   end
   
   def render_with_erb(content)  
-    ERbLight.new(content, safe_cmds, nil).result(binding)
+    ERbLight.new(content, safe_cmds, nil).result(binding).html_safe
   end  
   
   def render_layout_section(name)
@@ -223,7 +223,7 @@ include WebdavHelper
       display_content = @layout_section_pages[name].display_content
       content = render_with_erb(display_content)
     end 	
-    content
+    content.html_safe
   end	
   
   def include(name)
@@ -238,36 +238,35 @@ include WebdavHelper
   def render_layout_edit_links(name)
     render(:partial => 'layouts/edit_links', :locals => {:edit_page => @layout_section_pages[name], :edit_name => name})
   end  
-  
+
   def role_script
-    <<-EOF
-    <script type='text/javascript'>
-    var func = function() {
-      if (readCookie('role') == '#{ROLE_ADMIN}') {
-        showClass('role_#{ROLE_ADMIN}');
-        showClass('role_#{ROLE_EDITOR}');
-        showClass('role_#{ROLE_USER}');
-        showClass('role_#{ROLE_PUBLIC}');
-      } else if (readCookie('role') == '#{ROLE_EDITOR}') {
-        showClass('role_#{ROLE_EDITOR}');
-        showClass('role_#{ROLE_USER}');
-        showClass('role_#{ROLE_PUBLIC}');
-      } else if (readCookie('role') == '#{ROLE_USER}') {
-        showClass('role_#{ROLE_USER}');
-        showClass('role_#{ROLE_PUBLIC}');
-      } else  {
-        showClass('role_#{ROLE_PUBLIC}');
-        showClass('role_none');
-      }
-    }
-    onloadInit();
-    onloadAdd(func);
-    </script>
+    <<-EOF 
+      <script type='text/javascript'>
+        $(function() {
+          if (readCookie('role') == '#{ROLE_ADMIN}') {
+            showClass('role_#{ROLE_ADMIN}');
+            showClass('role_#{ROLE_EDITOR}');
+            showClass('role_#{ROLE_USER}');
+            showClass('role_#{ROLE_PUBLIC}');
+          } else if (readCookie('role') == '#{ROLE_EDITOR}') {
+            showClass('role_#{ROLE_EDITOR}');
+            showClass('role_#{ROLE_USER}');
+            showClass('role_#{ROLE_PUBLIC}');
+          } else if (readCookie('role') == '#{ROLE_USER}') {
+            showClass('role_#{ROLE_USER}');
+            showClass('role_#{ROLE_PUBLIC}');
+          } else  {
+            showClass('role_#{ROLE_PUBLIC}');
+            showClass('role_none');
+          }
+        });
+      </script>
     EOF
   end  
   
+
   def config_site_name
-    @wiki.config[:site_name]
+    @wiki.options[:site_name]
   end
   
   def session_user_name
@@ -346,12 +345,12 @@ include WebdavHelper
   
   def maxwiki_stylesheet_link_tags
     html = stylesheet_link_tag("main.css", :media => "all") + "\n"
-    unless @wiki.config[:theme].blank?
-      if File.exist?("#{Rails.root.to_s}/public/themes/#{@wiki.config[:theme]}/stylesheets/theme.css")
-        html << stylesheet_link_tag("/themes/#{@wiki.config[:theme]}/stylesheets/theme.css", :media => "all") + "\n"
+    unless @wiki.options[:theme].blank?
+      if File.exist?("#{Rails.root.to_s}/public/themes/#{@wiki.options[:theme]}/stylesheets/theme.css")
+        html << stylesheet_link_tag("/themes/#{@wiki.options[:theme]}/stylesheets/theme.css", :media => "all") + "\n"
       end
-      if File.exist?("#{Rails.root.to_s}/public/themes/#{@wiki.config[:theme]}/stylesheets/theme_print.css")
-        html << stylesheet_link_tag("/themes/#{@wiki.config[:theme]}/stylesheets/theme_print.css", :media => "print") + "\n"
+      if File.exist?("#{Rails.root.to_s}/public/themes/#{@wiki.options[:theme]}/stylesheets/theme_print.css")
+        html << stylesheet_link_tag("/themes/#{@wiki.options[:theme]}/stylesheets/theme_print.css", :media => "print") + "\n"
       end      
     end  
     

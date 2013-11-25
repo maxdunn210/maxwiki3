@@ -5,9 +5,9 @@
 
 <h1>Import Events</h1>
 
-<%= form_tag :controller => 'events', :action => 'import' %>
+<%= form_tag :controller => 'events', :action => 'import' do %>
 		<label for="import_list">Enter CSV list of events:</label><br/>
 		<%= text_area_tag('import_list', @import_list, :cols => '70', :rows => '40') %>
   <br />
   <%= submit_tag 'Import' %>
-<%= end_form %>
+<% end %>

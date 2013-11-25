@@ -159,7 +159,7 @@ class EventsController < ApplicationController
   end
   
   def import
-    if request.method == :get
+    if request.method == 'GET'
       return
     end
     @import_list = params[:import_list]

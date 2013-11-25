@@ -31,7 +31,7 @@ class MailFormControllerTest < ActionController::TestCase
     ActionMailer::Base.deliveries = []
     email1 = 'test1@maxtest.com'
     email2 = 'test2@testmax.com'
-    @wiki.config[:signup_cc_to] = "#{email1}, #{email2}"   
+    @wiki.options[:signup_cc_to] = "#{email1}, #{email2}"
     @wiki.save!    
   
     post :send_form, :name => 'Max Dunn', :interest => 'High'

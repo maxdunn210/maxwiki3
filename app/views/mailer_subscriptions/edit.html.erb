@@ -5,24 +5,24 @@
 
 <h1>Edit Mailer Subscription</h1>
 
-<%= form_tag :controller => 'mailer_subscriptions', :action => 'update', :id => @mailer_subscription %>
+<%= form_tag :controller => 'mailer_subscriptions', :action => 'update', :id => @mailer_subscription do %>
   <%= render :partial => 'form' %>
   <%= submit_tag 'Save' %>
-<%= end_form %>
+<% end %>
 
 <table>
 	<tr>
 		<td>
-		<%= form_tag :controller => 'mailer_subscriptions', :action => 'index' %> 
+		<%= form_tag :controller => 'mailer_subscriptions', :action => 'index' do %> 
 		  <%= submit_tag "Cancel" %>
-		<%= end_form %>
+		<% end %>
 		</td>
 		
 		<td>
-		<%= form_tag :controller => 'mailer_subscriptions', :action => 'destroy', :id => @mailer_subscription %>
+		<%= form_tag :controller => 'mailer_subscriptions', :action => 'destroy', :id => @mailer_subscription do %>
 		  <%= submit_tag "Delete" %>
 		  &nbsp;
-		<%= end_form %>
+		<% end %>
 		</td>
 	</tr>
 </table>

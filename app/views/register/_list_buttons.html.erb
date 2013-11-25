@@ -2,17 +2,17 @@
 <tr>
 
 <td>
-<%= form_tag :action => 'volunteer' %>
+<%= form_tag :action => 'volunteer' do %>
   <%= submit_tag "Continue" %>
     &nbsp;
-<%= end_form %>
+<% end %>
 </td>
 
 <td>
-<%= form_tag :action => 'new' %>
+<%= form_tag :action => 'new' do %>
   <%= submit_tag "Add Another" %>
     &nbsp;
-<%= end_form %>
+<% end %>
 </td>
 
 </tr>

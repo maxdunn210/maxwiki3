@@ -5,24 +5,24 @@
 
 <h1>Edit Mailer Group</h1>
 
-<%= form_tag :controller => 'mailer_groups', :action => 'update', :id => @mailer_group %>
+<%= form_tag :controller => 'mailer_groups', :action => 'update', :id => @mailer_group do %>
   <%= render :partial => 'form' %>
   <%= submit_tag 'Save' %>
-<%= end_form %>
+<% end %>
 
 <table>
 	<tr>
 		<td>
-		<%= form_tag :controller => 'mailer_groups', :action => 'index' %> 
+		<%= form_tag :controller => 'mailer_groups', :action => 'index' do %> 
 		  <%= submit_tag "Cancel" %>
-		<%= end_form %>
+		<% end %>
 		</td>
 		
 		<td>
-		<%= form_tag :controller => 'mailer_groups', :action => 'destroy', :id => @mailer_group %>
+		<%= form_tag :controller => 'mailer_groups', :action => 'destroy', :id => @mailer_group do %>
 		  <%= submit_tag "Delete" %>
 		  &nbsp;
-		<%= end_form %>
+		<% end %>
 		</td>
 	</tr>
 </table>

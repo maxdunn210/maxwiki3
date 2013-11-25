@@ -48,7 +48,7 @@ class Page < MaxWikiActiveRecord
     # Save the page info    
     self.parent = Page.find_by_name(parent_name)
     self.kind = kind unless kind.nil?
-    self.link = Page.create_link(name) if link.blank?
+    # MD DEBUG Jul-2012 self.link = Page.create_link(name) if link.blank?
     update_attributes(access) unless access.nil?
 
     # Now update all references

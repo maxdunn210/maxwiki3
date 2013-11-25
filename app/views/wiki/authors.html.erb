@@ -8,7 +8,7 @@
     <li>
       <%= link_to_page author %>
       co- or authored:
-      <%= @page_names_by_author[author].collect { |page_name| link_to_page(page_name) }.sort.join ', ' %>
+      <%= @page_names_by_author[author].collect { |page_name| link_to_page(page_name) }.sort.join(', ').html_safe %>
     </li>
   <% end %>
 </ul>

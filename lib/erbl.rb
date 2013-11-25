@@ -380,7 +380,7 @@ class << self
     head = @head.cp
     list = head.sub(list) {
       match = head.matching_data
-      match[1].join.each do |line|
+      match[1].join.each_line do |line|
         cmdlist.push("_erbout.concat #{line.dump}")
       end
       nil
@@ -409,12 +409,12 @@ class << self
         end
       end
         
-      match[3].join.each do |line|
+      match[3].join.each_line do |line|
         cmdlist.push("_erbout.concat #{line.dump}")
       end
       nil
     }
-    list.join.each do |line|
+    list.join.each_line do |line|
       cmdlist.push("_erbout.concat #{line.dump}")
     end
     cmdlist.push('ensure')

@@ -151,7 +151,7 @@ module WikiHelper
       :center => "-122.01686382293701, 37.31932181336203",
       :zoom => "2",
       :boundary_line => false,
-      :key => @wiki.config[:google_key]
+      :key => @wiki.options[:google_key]
     }  
     @gmap = gmap_defaults.merge(options)
     @gmap[:marker] = @gmap[:center] if @gmap[:marker].nil?
@@ -226,7 +226,7 @@ module WikiHelper
     end
     
     html = "<script type=\"text/javascript\"><!--\n"
-    html << "  google_ad_client = \"#{@wiki.config[:google_ad_client]}\";\n"
+    html << "  google_ad_client = \"#{@wiki.options[:google_ad_client]}\";\n"
     html << "  google_ad_width = #{width};\n"
     html << "  google_ad_height = #{height};\n"
     html << "  google_ad_format = \"#{format}\";\n"
@@ -337,12 +337,12 @@ module WikiHelper
       :label => 'YouTube',
       :url => { :controller => "drag_and_drop_media", 
         :action => 'youtube',
-        :params=> {:key=>@wiki.config[:youtube_key] } } },   
+        :params=> {:key=>@wiki.options[:youtube_key] } } },
     { :value => 'flickr',
       :label => 'Flickr',
       :url => { :controller => "drag_and_drop_media", 
         :action => 'flickr',
-        :params => {:key => @wiki.config[:flickr_key] } } }, 
+        :params => {:key => @wiki.options[:flickr_key] } } },
     { :value => 'davetv',
       :label => 'DaveTV',
       :url => { :controller => "drag_and_drop_media", 
@@ -351,7 +351,7 @@ module WikiHelper
       :label => 'Amazon',
       :url => { :controller => "drag_and_drop_media", 
         :action => 'amazon',
-        :params => {:key => @wiki.config[:amazon_key]}} },                                             
+        :params => {:key => @wiki.options[:amazon_key]}} },
     ]    
   end
   

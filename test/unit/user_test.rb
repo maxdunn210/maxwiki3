@@ -11,12 +11,12 @@ class UserTest < ActiveSupport::TestCase
       
   def test_auth
     auth = User.authenticate("bob", "atest")
-    assert(!auth.error?, auth.error_msg)
+    assert(!auth.error?, auth.user.errors.to_s)
     
     
     auth = User.authenticate("nonbob", "atest")
-    assert(auth.error?, auth.error_msg)
-    assert_equal(Authorization::NOT_FOUND, auth.error_type, auth.error_msg)
+    assert(auth.error?, auth.user.errors.to_s)
+    assert_equal(Authorization::NOT_FOUND, auth.error_type, auth.user.errors.to_s)
   end
 
   def test_password_change
@@ -27,8 +27,8 @@ class UserTest < ActiveSupport::TestCase
     
     # Make sure the new password works and the old one doesn't
     auth = User.authenticate("longbob", "nonbobpasswd")
-    assert(!auth.error?, auth.error_msg)
-    assert_equal(user, auth.user, auth.error_msg)
+    assert(!auth.error?, auth.user.errors.to_s)
+    assert_equal(user, auth.user, auth.user.errors.to_s)
     
     auth = User.authenticate("longbob", "alongtest")
     assert_equal(Authorization::NOT_AUTHORIZED, auth.error_type)
@@ -39,8 +39,8 @@ class UserTest < ActiveSupport::TestCase
     
     # Now check again
     auth = User.authenticate("longbob", "alongtest")
-    assert(!auth.error?, auth.error_msg)
-    assert_equal(user, auth.user, auth.error_msg)
+    assert(!auth.error?, auth.user.errors.to_s)
+    assert_equal(user, auth.user, auth.user.errors.to_s)
 
     auth = User.authenticate("longbob", "nonbobpasswd")
     assert_equal(Authorization::NOT_AUTHORIZED, auth.error_type)

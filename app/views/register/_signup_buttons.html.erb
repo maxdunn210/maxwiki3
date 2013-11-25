@@ -10,21 +10,21 @@
 <%= form_tag({:controller => 'user', :action => 'login'}, {:method => 'get'}) %>
   <%= submit_tag "Login" %>
     &nbsp;
-<%= end_form %>
+<% end %>
 </td>
 
 <td>
 <%= form_tag({:controller => 'user', :action => 'signup'}, {:method => 'get'}) %>
   <%= submit_tag "Signup for a New Account" %>
     &nbsp;
-<%= end_form %>
+<% end %>
 </td>
 
 <td>
 <%= form_tag({:controller => 'user', :action => 'reset_password'}, {:method => 'get'}) %>
   <%= submit_tag "Reset Password" %>
     &nbsp;
-<%= end_form %>
+<% end %>
 </td>
 </tr>
 
@@ -35,7 +35,7 @@
 <%= form_tag :action => 'index' %>
   <%= submit_tag "Continue" %>
     &nbsp;
-<%= end_form %>
+<% end %>
 
 <% end %>
 

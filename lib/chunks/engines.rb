@@ -2,7 +2,7 @@ $: << File.dirname(__FILE__) + "../../lib"
 
 require 'max_wiki_textile'
 
-require 'rdocsupport'
+# MD DEBUG Jul-2012 require 'rdocsupport'
 require 'chunks/chunk'
 
 # The markup engines are Chunks that call the one of MaxWikiTextile

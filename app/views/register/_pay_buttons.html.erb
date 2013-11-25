@@ -3,10 +3,10 @@
 
 <% if all_fees_paid %>
 <td>
-<%= form_tag :action => 'document' %>
+<%= form_tag :action => 'document' do %>
   <%= submit_tag "Continue" %>
     &nbsp;
-<%= end_form %>
+<% end %>
 </td>
 <% else %>
 <td>
@@ -48,19 +48,19 @@
 </td>
 
 <td>
-<%= form_tag :action => 'pay_later' %>
+<%= form_tag :action => 'pay_later' do %>
   <%= submit_tag "Pay Later" %>
   &nbsp;
-<%= end_form %>
+<% end %>
 </td>
 
 <% end %>
 
 <td>
-<%= form_tag :action => 'volunteer' %>
+<%= form_tag :action => 'volunteer' do %>
   <%= submit_tag "Back" %>
     &nbsp;
-<%= end_form %>
+<% end %>
 </td>
 
 </tr>

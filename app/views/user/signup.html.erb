@@ -23,10 +23,10 @@
 <%= form_tag :controller => 'user', :action => 'signup' %>
   <%= render :partial => 'edit' %>
   <%= render :partial => 'password' %>
-    <% unless @wiki.config[:signup_survey].blank? %>
+    <% unless @wiki.options[:signup_survey].blank? %>
       <hr>
-      <%= survey(@wiki.config[:signup_survey], :submit => false) %>
+      <%= survey(@wiki.options[:signup_survey], :submit => false) %>
     <% end %>
   <br/>  
   <%= submit_tag 'Signup' %>
-<%= end_form %>
+<% end %>

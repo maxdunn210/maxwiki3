@@ -1,7 +1,7 @@
 require 'fileutils'
 require 'redcloth_for_tex'
-require 'parsedate'
-require 'zip/zip'
+# MD DEBUG Jul-2012 require 'parsedate'
+# MD DEBUG Jul-2012 require 'zip/zip'
 require 'resolv'
 
 class WikiController < ApplicationController
@@ -161,7 +161,7 @@ class WikiController < ApplicationController
       setup_roles
       @page.lock(Time.now, @author)
     end
-    
+
     setup_page_content_and_type(@page.revisions.last) 
   end
   
@@ -472,13 +472,13 @@ class WikiController < ApplicationController
     page_editor = nil
     if !@page.new_record?
       if @page.revisions.last.content_type == :textile && 
-        (@wiki.config[:editor].nil? || @wiki.config[:editor].downcase != 'wysiwyg')
+        (@wiki.options[:editor].nil? || @wiki.options[:editor].downcase != 'wysiwyg')
         page_editor = 'textile'
       else
         page_editor = 'wysiwyg'
       end
     end
-    @editor = (params[:editor] || params[:editor_1] || page_editor || @wiki.config[:editor] || 'textile').downcase
+    @editor = (params[:editor] || params[:editor_1] || page_editor || @wiki.options[:editor] || 'textile').downcase
     
     return true #Needed or WEBrick doesn't show anything if last result is nil
   end
@@ -537,7 +537,7 @@ class WikiController < ApplicationController
 
       # Parse the actual request to get the path, stripping off the leading /
     # If there is a problem parsing the request, then just return the page found
-    uri_path = URI.parse(request.request_uri).path rescue nil
+    uri_path = URI.parse(request.full_path).path rescue nil
     return page if uri_path.nil?
     
     # Grab the last element after the slash and take out page number if present

@@ -4,4 +4,4 @@
   <%= render(:partial => 'blog/post_title', :locals => {:post => @page}) %>
 <% end %>
 
-<%= render_with_erb(@page.display_content).html_safe %>
+<%= render_with_erb(@page.display_content) %>

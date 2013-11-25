@@ -6,13 +6,13 @@
       </td>
       <td>
         <% if item[:choices].nil? %>
-          <input id="<%=item[:id]%>" name="config[<%=item[:var]%>]" type="text" value="<%=@wiki.config[item[:var]]%>"
+          <input id="<%=item[:id]%>" name="config[<%=item[:var]%>]" type="text" value="<%=@wiki.options[item[:var]]%>"
           <% if item[:size] %>size="<%=item[:size]%>"<% end %>
            />
         <% else %>   
           <select id="<%=item[:id]%>" name="config[<%=item[:var]%>]">
           <% for value in item[:choices] %>
-            <option value="<%=value%>" <%= 'selected="selected"' if value == @wiki.config[item[:var]] %>><%=value.capitalize%></option>
+            <option value="<%=value%>" <%= 'selected="selected"' if value == @wiki.options[item[:var]] %>><%=value.capitalize%></option>
           <% end %>
           </select>
         <% end %>
